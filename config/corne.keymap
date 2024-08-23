@@ -13,7 +13,7 @@
         Spotlight: Spotlight {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(SPACE)>;
+            bindings = <&kp RG(SPACE)>;
             label = "SPOTLIGHT";
         };
 
@@ -27,21 +27,21 @@
         switch_apps: switch_apps {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(TAB)>;
+            bindings = <&kp RG(TAB)>;
             label = "SWITCH_APPS";
         };
 
         switch_apps_reverse: switch_apps_reverse {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(TAB)>;
+            bindings = <&kp RG(TAB)>;
             label = "SWITCH_APPS_REVERSE";
         };
 
         switch_apps_samewindow: switch_apps_samewindow {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(GRAVE)>;
+            bindings = <&kp RG(GRAVE)>;
             label = "SWITCH_APPS_SAMEWINDOW";
         };
     };
@@ -57,9 +57,9 @@
             //                    | GUI | SPC | LWR |   | RSE | SPC  | ALT |
 
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E     &kp R      &kp T    &kp Y  &kp U      &kp I      &kp O    &kp P     &kp BSPC
-&kp LCTRL  &kp A  &kp S  &kp D     &kp F      &kp G    &kp H  &kp J      &kp K      &kp L    &kp SEMI  &kp RET
-&kp LSHFT  &kp Z  &kp X  &kp C     &kp V      &kp B    &kp N  &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
+&kp TAB    &kp Q  &kp W  &kp E     &kp R      &kp T    &kp Y  &kp U      &kp I      &kp O    &kp P             &kp BSPC
+&kp LCTRL  &kp A  &kp S  &kp D     &kp F      &kp G    &kp H  &kp J      &kp K      &kp L    &kp SINGLE_QUOTE  &kp RET
+&kp LSHFT  &kp Z  &kp X  &kp C     &kp V      &kp B    &kp N  &kp M      &kp COMMA  &kp DOT  &kp FSLH          &kp ESC
                          &kp LGUI  &kp SPACE  &mo 1    &mo 2  &kp SPACE  &kp RALT
             >;
         };
@@ -72,9 +72,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB    &trans  &kp N7  &kp N8    &kp N9  &kp N0       &kp N6    &kp N7    &kp N8    &kp N9     &kp N0  &kp BSPC
-&trans     &trans  &kp N4  &kp N5    &kp N6  &trans       &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &trans  &trans
-&kp LSHFT  &trans  &kp N1  &kp N2    &kp N3  &kp DOT      &trans    &trans    &trans    &trans     &trans  &trans
+&kp TAB    &trans  &kp N7  &kp N8    &kp N9  &kp N0       &kp N6    &kp N7    &kp N8    &kp N9     &kp N0         &kp BSPC
+&trans     &trans  &kp N4  &kp N5    &kp N6  &trans       &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &kp SEMICOLON  &trans
+&kp LSHFT  &trans  &kp N1  &kp N2    &kp N3  &kp DOT      &trans    &trans    &trans    &trans     &trans         &trans
                            &kp LGUI  &trans  &kp SPACE    &kp RET   &trans    &kp RALT
             >;
         };
