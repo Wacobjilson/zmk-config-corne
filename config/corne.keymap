@@ -13,7 +13,7 @@
 / {
     conditional_layers {
         compatible = "zmk,conditional-layers";
-        both_layer {
+        tri_layer {
             if-layers = <1 2>;
             then-layer = <3>;
         };
